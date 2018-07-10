@@ -1,0 +1,13 @@
+array vs list?
+a -> same type, defined limit
+
+instantiate vs initialize vs declare
+instantiate -> means defining or creating new object for class to access all properties like methods, fields, etc. from class.
+initialize -> assign initial value
+declare -> both instantiate and initialize can happen during declaration or not
+
+
+const vs readonly?
+const-> static, cant be changed
+readonly -> can only be changed in constructor, read only once assigned
+

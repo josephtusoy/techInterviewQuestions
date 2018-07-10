@@ -1,0 +1,195 @@
+﻿What is the current MVC version?
+5.2
+
+What do you mean by scaffolding?
+- is a code generation framework for ASP.NET Web applications. Visual Studio 2013 includes pre-installed code generators for MVC and Web API projects. You add scaffolding to your project when you want to quickly add code that interacts with data models. Using scaffolding can reduce the amount of time to develop standard data operations in your project. 
+src: https://docs.microsoft.com/en-us/aspnet/visual-studio/overview/2013/aspnet-scaffolding-overview
+
+What is ASP.NET Identity?
+-Rewrite framework for ASP.NET Membership
+
+
+What is the major dfference between ASP.NET Membership and Identity?
+- identity supports owin 
+- membership only supports rdbms
+- db schema dependent
+
+What is MS OWIN? 
+- (Open Web Interface for .NET) Owin includes middleware components for authentiction including support for logins
+using external providers (MS Account, FB, Google, etc. )
+-not a tool and framework but a specification
+
+
+
+OWIN is a specification. What is specification in .NET?
+-
+
+
+https://www.asp.net/web-api/overview/security
+
+
+
+
+Authentication versus Authorization in ASP MVC
+-Authentication is the process of identifying and validating the identity of a 
+ client accessing an application, "who"
+-Authorization  is the process of determining whether an authenticated user 
+ has permission to access a particular URL/resource or to perform some action. 
+
+MS ASP.NET 5
+- .NET Core 5
+
+
+How is OWIN related to IIS?
+- Prior to OWIN, when you are building ASP.NET application, you are inheritedly bound to IIS due to the heavy dependency on System.Web assembly.
+   
+What do you mean by URL Authorization?
+
+
+
+JWT
+
+OAuth 
+
+
+What is Signal R? 
+
+CORS
+
+
+
+How is Segregating the configs for MVC routing, Web API, Bundle etc. improves MVC?
+How do you create MVC REST based Services? 
+What does REST means?
+
+Exlain the page life cycle of MVC 
+→App initialization
+→Routing
+→Instantiate and execute controller
+→Locate and invoke controller action
+→Instantiate and render view.
+
+What are the advantages of MVC over ASP.NET?
+- Simultaneous development – Multiple developers can work simultaneously on the model, controller and views.
+- High cohesion – MVC enables logical grouping of related actions on a controller together. The views for a specific model are also grouped together.
+- Low coupling – The very nature of the MVC framework is such that there is low coupling among models, views or controllers
+- Ease of modification – Because of the separation of responsibilities, future development or modification is easier
+- Multiple views for a model – Models can have multiple views
+
+
+Differentiate Transfer objects from Domain objects?
+
+What is HTML helper?
+What is ViewBag?
+What is Unobtrusive Javascript?
+What is the use of ViewModel in MVC?
+What do you mean by routing in MVC?
+Illustrate Route Table
+What are actions in mvc? how are they invoked?
+What is Attribute routing in MVC?
+Difference between URI Routing and Attribute Routing?
+How to enable Attribute Routing?
+Explain difference between dependency resolution and dependenc injection?
+
+What is the difference between ViewBag and ViewData in MVC?
+Web API Cors?
+
+
+
+
+
+
+
+ASP Life Cycle?
+-initialization
+-load view state
+-pre render
+-save view state
+-render 
+-unload
+
+
+ASP.NET Core provides the following benefits:
+-A unified story for building web UI and web APIs.
+-Integration of modern, client-side frameworks and development workflows.
+-A cloud-ready, environment-based configuration system.
+-Built-in dependency injection.
+-A lightweight, high-performance, and modular HTTP request pipeline.
+-Ability to host on IIS, Nginx, Apache, Docker, or self-host in your own process.
+-Side-by-side app versioning when targeting .NET Core.
+-Tooling that simplifies modern web development.
+-Ability to build and run on Windows, macOS, and Linux.
+-Open-source and community-focused.
+
+
+
+
+How is CLR and CLS connected?
+CLS is a standard, specifically a document that says how programs created by
+different programming languages be turned into MSIL code. 
+
+
+How is MSIL code 
+
+
+What does MSIL code look like?
+g-1000-IL
+
+How is MSIL and Assembly code connected?
+ -is an object-oriented assembly language, and is entirely stack-based. bytecode,
+ works in virtual machine, .net framework and not the specific hardware
+ - Assembly code is hardware targeted
+ 
+ 
+ Do you have different set of assembly code for different set of harware?
+ 
+ 
+ 
+Just in Time compiler (JIT)
+
+
+
+IEnumerably versus IQueryable
+what is routing in angular?
+how material icons work?
+
+
+
+when to use bitwise operators
+when to use shif operators
+REVIEW RECURSION
+relearn LINQ
+https://www.lynda.com/Print-Design-tutorials/Map-folds/186804/384448-4.html
+https://www.scala-exercises.org/fp_in_scala/getting_started_with_functional_programming
+
+
+https://medium.com/@eyaldahari/how-to-run-apache-spark-with-hadoop-using-intellij-on-windows-359a8421507b
+
+AMAZON
+
+
+what is npm
+
+312-787-4030
+
+
+learn about delegate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://rn12.ultipro.com/SIR1000/jobboard/SearchJobs.aspx?Page=Search

@@ -1,0 +1,115 @@
+SSIS
+
+How does SSIS differ from DTS?
+-SSIS segregates of the control/work flow from the data flow in Data Transformation Services
+-add ability to use a buffer/memory oriented architecture 
+ 
+Data flow versus Control Flow?
+-CF -> operational work flow like condition and iteration. either failed or suceed
+-DF -> to do with file, data. actual data manipulation
+ 
+Complete Versus Success
+- Success is completion without issues
+- have to do with Precedence Constraints, order and condition of control flow tasks
+
+
+package flow versus 
+
+
+Types of transformations?
+ Non-Blocking Synchronous Streaming Transformations (Fastest)
+ Non-Blocking Synchronous Row-Based Transformations (Fast)
+ Semi-Blocking Asynchronous Transformations (Medium)
+ Fully Blocking Asynchronous Transformations (Slowest)
+
+
+List of transformations?
+-Aggregate Transformation
+-Audit Transformation
+-Cache Transform Transformation
+-Character Map Transformation
+-Conditional Split Transformation
+-Copy Column Transformation
+-Data Conversion Transformation
+-Data Mining Query Transformation
+-Derived Column Transformation
+-DQS Cleansing Transformation
+-Export Column Transformation
+-Fuzzy Grouping Transformation
+-Fuzzy LookUp Transformation
+-Import Column Transformation
+-Look Up Transformation
+-Merge Transformation
+-Merge Join Transformation
+-Multicast Transformation
+-OLEDB Command Transformation
+-Percentage Sampling Transformation
+-PIVOT Transformation
+-Row Count Transformation
+-Row Sampling Transformation
+-Script Component Transformation
+-Slowly Changing Dimension Transformation
+-Sort Transformation
+-Term Extraction Transformation
+-Term Look Up Transformation
+-Union All Transformation
+-UnPivot Transformation
+
+what is task?
+-method, carries out individual unit of work
+
+2 types of tasks in ssis
+-Control Flow tasks and Database Maintenance tasks
+
+
+
+
+CLR SQL
+
+
+how to enable CLR  integration in SQL?
+sp_configure 'clr enabled', 1  
+GO  
+RECONFIGURE  
+GO  
+
+code Access Security?
+
+
+SQL cursor
+
+
+
+Example of Control flow task?
+
+
+what is precedence constraints?
+Precedence Constraints allow you to define the logical sequence of tasks in the order they should be executed. 
+-Success 
+-Failure 
+-Complete
+
+What is a container and how many types of containers are there?
+-A container is a logical grouping of tasks which allows you to manage the scope of the tasks together.
+These are the types of containers in SSIS:
+1. Sequence Container - related tasks together
+2. For Loop Container - repeating flow in package
+3. For Each Loop Container - Enumerating each object in a collection
+
+
+variable vs variable scope
+- store values
+scope -> coverage. ex. data flow, package
+
+
+Complete versus Success?
+
+ 
+
+
+SSAS
+
+
+
+SSRS
+

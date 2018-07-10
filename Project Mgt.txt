@@ -1,0 +1,8 @@
+Quality
+- Institutionalize Rigorous Code Review Session
+- Automate Detection of Issues based on Code Review Standards
+- Apply Unit Testing
+- Information Dissimination on Coding Standards 
+
+
+

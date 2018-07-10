@@ -1,0 +1,52 @@
+What is continous integration?
+
+Integrity?
+
+Life Cycle?
+requirement gathering and analysis
+design
+implementation
+testing
+deployment 
+maintenance/support
+
+boxing vs unboxing
+b-> value type to object
+
+
+5 Principles of Design?
+alignment - visual connection between items, placement
+repetition - association and consistency 
+contrast - ephasize/highlight key elements
+proximity - creates organization by grouping
+balance -  add stability and structure to design, symmetric or asymmetric 
+
+
+SOLID Principle?
+
+Single responsibility principle
+  - a class should have only a single responsibility
+Open/closed principle
+  - open for extension, but closed for modification."
+Liskov substitution principle
+  - objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."
+Interface segregation principle
+  - many client-specific interfaces are better than one general-purpose interface."
+Dependency inversion principle
+  - one should depend upon abstractions, not concretions.
+
+
+ACID?
+- Atomicity
+- Consistency
+- Isolation
+- Durability
+
+
+BASE
+
+
+
+
+Application Development Principle?
+
