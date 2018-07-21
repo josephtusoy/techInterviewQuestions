@@ -1,13 +1,96 @@
 array vs list?
-a -> same type, defined limit
+-array -> same type, defined limit
 
 instantiate vs initialize vs declare
-instantiate -> means defining or creating new object for class to access all properties like methods, fields, etc. from class.
-initialize -> assign initial value
-declare -> both instantiate and initialize can happen during declaration or not
+-instantiate -> means defining or creating new object for class to access all properties like methods, fields, etc. from class.
+-initialize -> assign initial value
+-declare -> introduction of variable to object, both instantiate and initialize can happen during declaration or not
 
+abstract class vs interface vs class?
+-abstract class allows you to create functionality that subclasses can implement or override. 
+-interface only allows you to define functionality, not implement it.
+-a class can extend only one abstract class, it can take advantage of multiple interfaces.
 
 const vs readonly?
-const-> static, cant be changed
-readonly -> can only be changed in constructor, read only once assigned
+-both are not changed during runtime.
+-const-> static, cant be changed
+-readonly -> can only be changed in constructor, read only once assigned
+
+can abstract class have constructor?
+-Yes when we define a class to be an Abstract Class it cannot be instantiated but that does not mean an 
+Abstract class cannot have a constructor. Each abstract class must have a concrete subclass which will 
+implement the abstract methods of that abstract class
+
+can we use readonly for method?
+
+
+what is monitor? how is it related with asynch?
+
+stack and heap?
+
+what is jagged array?
+
+
+what is delegate?
+
+Method overloading is determined at compile time. Explain.
+-Compiler knows exactly which code will be executed when you call an overloaded method.
+-It can produce a direct call to the code without adding any checks that would have to be done when the code runs.
+
+Method overriding is determined at runtime. Explain.
+-When you call a virtual method the actual method to call is determined from the actual type of the object, 
+-and this check has to be done when the call is done. 
+-As a reference can potentially reference objects of different types, the compiler can't determine from 
+the reference type which method will be called, so it has to add code for looking up which class to get the method from.
+
+
+what is bitwise copy? 
+
+shallow copy versus deep copy?
+shallow copy is object replication with references to fields retained. Deep copy
+is creation of new instance of object with all fields newly allocated in terms of memory. 
+
+what is sealed class?
+
+multiple inheritance in c#?
+- multiple inheritance not supported
+- way around: use of interface
+
+reflection?
+-provides objects that describes assemblies, modules and types at runtime 
+-create instance of a type from existing or newly instantiated object to invoke methods and access attributes
+
+error types in c#?
+- runtime
+- parser
+- configuration
+- compilation
+
+dispose and garbage collection?
+-garbage collection is almost always automatic but for the case of unmanaged resource, dispose has to be called by user
+
+what is unmanaged resource?
+- is concept of cleanup responsibility 
+- unmange resource mostly assoc. with objects that run outside the .Net runtime. ex. db connection, file, etc.
+-.Net includes wrapper for those objects, and wrapper allows them to be managed
+- unmanaged resource has to be handled after use using dispose or finalizer pattern
+
+what is object finalization?
+-finalize is a protected method used to perform cleanup operations on unmanaged resources held by the current object before the object is destroyed. 
+-is accessible only through current class or through a derived class.
+
+when to use finalization and when to use dispose?
+-if object were abandoned/ not disposed, objects, after notification by GC, may perform cleanup themselves -> finalization.
+
+unmanaged code/ unmanaged code
+-
+
+enumeration?
+
+
+what is the use of keyword monitor?
+
+
+what is extension method?
+
 

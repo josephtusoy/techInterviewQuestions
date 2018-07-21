@@ -2,48 +2,117 @@
 5.2
 
 What do you mean by scaffolding?
-- is a code generation framework for ASP.NET Web applications. Visual Studio 2013 includes pre-installed code generators for MVC and Web API projects. You add scaffolding to your project when you want to quickly add code that interacts with data models. Using scaffolding can reduce the amount of time to develop standard data operations in your project. 
-src: https://docs.microsoft.com/en-us/aspnet/visual-studio/overview/2013/aspnet-scaffolding-overview
-
+- is a code generation framework for ASP.NET Web applications. Visual Studio 2013 includes pre-installed code generators for MVC and Web API projects. 
+- You add scaffolding to your project when you want to quickly add code that interacts with data models. 
+- Using scaffolding can reduce the amount of time to develop standard data operations in your project. 
+ 
 What is ASP.NET Identity?
 -Rewrite framework for ASP.NET Membership
 
-
-What is the major dfference between ASP.NET Membership and Identity?
+What is the major difference between ASP.NET Membership and Identity?
 - identity supports owin 
 - membership only supports rdbms
-- db schema dependent
+- membership is db schema dependent
 
 What is MS OWIN? 
 - (Open Web Interface for .NET) Owin includes middleware components for authentiction including support for logins
 using external providers (MS Account, FB, Google, etc. )
 -not a tool and framework but a specification
-
-
-
-OWIN is a specification. What is specification in .NET?
--
-
-
-https://www.asp.net/web-api/overview/security
-
-
-
-
+ 
 Authentication versus Authorization in ASP MVC
 -Authentication is the process of identifying and validating the identity of a 
  client accessing an application, "who"
 -Authorization  is the process of determining whether an authenticated user 
  has permission to access a particular URL/resource or to perform some action. 
 
-MS ASP.NET 5
-- .NET Core 5
-
-
 How is OWIN related to IIS?
 - Prior to OWIN, when you are building ASP.NET application, you are inheritedly bound to IIS due to the heavy dependency on System.Web assembly.
    
 What do you mean by URL Authorization?
+
+What is Controller?
+- classes being referred to by ASP.NET MVC framework as it maps URL to resources
+- process incoming requests using action methods
+
+What is action methods?
+-public methods of a Controller class 
+
+What are the restrictions for action methods?
+-must be public. It cannot be private or protected
+-cannot be overloaded
+-cannot be a static method.
+-cannot be an extension method.
+-cannot be a constructor,getter, or setter.
+-cannot have open generic types.
+-not a method of the controller base class.
+-cannot contain ref or out parameters
+
+What is action results?
+-return type of action methods
+-ActionResult is an abstract class which is the base class for all types of action results.
+
+Types of action results
+-ContentResult
+-EmptyResult
+-FileContentResult
+-FilePathResult
+-FileStreamResult
+-HttpUnathorizedResult
+-JavaScriptResult
+-JsonResult
+-RedirectResult
+-RedirectToActionResult
+-RedirectToRouteResult
+-PartialViewResult
+-ViewResult
+
+When to use partialview?
+-reusable view, which can be used as a child view in multiple other views. 
+-eliminates duplicate coding by reusing same partial view in multiple places. 
+
+What is the default action method?
+-Index
+
+What is modelstate?
+ -represents a collection of name and value pairs that were submitted to the server during a POST.
+ -contains a collection of error messages for each value submitted.
+ -accessed from classes inheriting System.Web.Mvc.Controller.
+
+How does modelstate identify error in the value?
+-model validation using data annotation
+
+
+web api data format?
+
+what is default web api data format?
+
+
+Explain the page life cycle of MVC 
+→App initialization
+→Routing
+→Instantiate and execute controller
+→Locate and invoke controller action
+→Instantiate and render view.
+
+ASP Life Cycle?
+-initialization
+-load view state
+-pre render
+-save view state
+-render 
+-unload
+
+
+
+What are the advantages of MVC over ASP.NET?
+- Simultaneous development – Multiple developers can work simultaneously on the model, controller and views.
+- High cohesion – MVC enables logical grouping of related actions on a controller together. The views for a specific model are also grouped together.
+- Low coupling – The very nature of the MVC framework is such that there is low coupling among models, views or controllers
+- Ease of modification – Because of the separation of responsibilities, future development or modification is easier
+- Multiple views for a model – Models can have multiple views
+
+
+
 
 
 
@@ -62,51 +131,71 @@ How is Segregating the configs for MVC routing, Web API, Bundle etc. improves MV
 How do you create MVC REST based Services? 
 What does REST means?
 
-Exlain the page life cycle of MVC 
-→App initialization
-→Routing
-→Instantiate and execute controller
-→Locate and invoke controller action
-→Instantiate and render view.
-
-What are the advantages of MVC over ASP.NET?
-- Simultaneous development – Multiple developers can work simultaneously on the model, controller and views.
-- High cohesion – MVC enables logical grouping of related actions on a controller together. The views for a specific model are also grouped together.
-- Low coupling – The very nature of the MVC framework is such that there is low coupling among models, views or controllers
-- Ease of modification – Because of the separation of responsibilities, future development or modification is easier
-- Multiple views for a model – Models can have multiple views
-
-
 Differentiate Transfer objects from Domain objects?
 
-What is HTML helper?
+
 What is ViewBag?
 What is Unobtrusive Javascript?
 What is the use of ViewModel in MVC?
 What do you mean by routing in MVC?
 Illustrate Route Table
 What are actions in mvc? how are they invoked?
+
 What is Attribute routing in MVC?
-Difference between URI Routing and Attribute Routing?
+
+How to enable attribute routing in MVC?
+-Use routes.MapMVCAttributeRoutes()
+
+Routing is how ASP.NET MVC matches a URI to an action.
+
+Difference between Conventional Routing and Attribute Routing?
+ -Convention Routing, which allows developers to specify a format or group of formats which can be used to parse 
+ incoming URLs and determine the appropriate actions
+ -Attribute Routing allows us to define routes in close proximity to their actions, giving us greater flexibility
+ - Attribute is specified in the controller, convention is at routing config
+ 
 How to enable Attribute Routing?
-Explain difference between dependency resolution and dependenc injection?
+Explain difference between dependency resolution and dependency injection?
 
 What is the difference between ViewBag and ViewData in MVC?
 Web API Cors?
 
 
 
+What is routing in ASP MVC?
+-to eliminate needs of mapping each URL with a physical file. 
+-Routing enable us to define URL pattern that maps to the request handler.
+
+What is the area for in ASP?
 
 
+jsp versus asp?
 
 
-ASP Life Cycle?
--initialization
--load view state
--pre render
--save view state
--render 
--unload
+ What does RouteConfig class contains?
+ 
+ 
+ 
+What are restrictions to action methods?
+-must be public. It cannot be private or protected
+-cannot be overloaded
+-cannot be a static method.
+
+
+What is html helper? 
+-HtmlHelper class generates html elements. 
+-It binds the model object to html elements 
+
+
+Creating Custom HTML Helpers
+-Creating a static method
+-Writing an extension method
+-Using the @helper(razor only)
+
+
+html helper versus ajax helper?
+
+
 
 
 ASP.NET Core provides the following benefits:
@@ -136,24 +225,12 @@ What does MSIL code look like?
 g-1000-IL
 
 How is MSIL and Assembly code connected?
- -is an object-oriented assembly language, and is entirely stack-based. bytecode,
+-is an object-oriented assembly language, and is entirely stack-based. bytecode,
  works in virtual machine, .net framework and not the specific hardware
- - Assembly code is hardware targeted
- 
- 
- Do you have different set of assembly code for different set of harware?
+- Assembly code is hardware targeted
  
  
  
-Just in Time compiler (JIT)
-
-
-
-IEnumerably versus IQueryable
-what is routing in angular?
-how material icons work?
-
-
 
 when to use bitwise operators
 when to use shif operators
@@ -175,21 +252,60 @@ what is npm
 
 learn about delegate
 
+razor is unit testable without running the application or web server. explain.
 
 
 
+ 
+specify the mvc more versions...
+
+new features of mvc
+-MVC architecture with webform engine
+-Routing
+-HTML Helpers
+-Ajax Helpers
+-Auto binding
+
+new features of mvc2
+-Area
+-Asynchronous controller
+-Html helper methods with lambda expression
+-DataAnnotations attributes
+-Client side validation
+-Custom template
+-Scaffolding
+
+new features of mvc 3
+-The Razor View Engine
+-Improved support for validation and JavaScript (unobtrusive)
+-Support for output caching
+-Global filters
+-Remote Validation
+-Enhanced support for dependency injection/ Dependency resolver for Ioc
+-ViewBag
+
+new features in  mvc 4 
+-Add Controller to other project folder
+-Task Support for Asynchronous Controllers
+-Bundling and Minification
+-OAuth and OpenID
+-ASP.NET Web API
+-Mobile project template
+-Bundling and minification
+-Azure support
+
+new features in mvc 5
+-new scaffolding items
+-asp.net identity
+-one asp.net
+-bootstrap support
+-attribute routing
+-filter overrides/ authentication filters
+
+new features in mvc 5.2
+-attribute based routing
+-bug fixes and monitor features update
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-https://rn12.ultipro.com/SIR1000/jobboard/SearchJobs.aspx?Page=Search
+ 

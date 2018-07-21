@@ -1,0 +1,48 @@
+LINQ
+*action results
+*partial view
+*modelState
+web api data format
+action filters
+delegates with action, func
+inner join, outer join, primary key, foreign key, 
+composite key, user defined functions (scalar, table valued)
+functions vs stored procs
+varchar versus nvarchar
+cross apply
+outer apply
+cross join
+entity framework - deferred execution, lazy loading, eager loading
+c# multithreading thread , threadstart, TPL, asynch
+garbage collector, assemblies, boing
+code block 
+disposable interface
+ienumerable vs iqueryable
+static constructor
+solid principle
+c# extension methods
+reflection 
+yield
+checked and unchecked
+attribute
+deep copy versus shallow copy
+dispose versus finalize
+ienumerable vs enumerator
+binary review
+ASCCI versus UNICODE
+UTF-32
+difference ++x vs  x++
+stack versus heap
+
+common intermediate language
+next line in c#
+
+
+Links:
+
+http://jonskeet.uk/csharp/parameters.html
+http://jonskeet.uk/csharp/memory.html
+http://csharpindepth.com/Articles/General/Strings.aspx
+https://www.xml.com/axml/notes/Surrogates.html
+https://csharp.2000things.com/2010/08/13/57-overflow-on-integer-operations/
+
